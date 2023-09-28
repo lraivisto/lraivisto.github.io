@@ -19,8 +19,7 @@ h1, p, ul {
   border-radius: 5px;
   list-style-type: none;
   max-width: 1000px; /* Set a max-width for larger screens */
-  width: auto; /* By default, let it wrap the content */
-  text-align: center; /* Center the text */
+  width: 90%; /* Default to 90% width */
 }
 
 a {
@@ -46,7 +45,6 @@ li:last-child {
 @media (max-width: 576px) {
   h1, p, ul {
     font-size: 0.9em; /* Slightly reduce the font size */
-    margin: 10px; /* Add some margin to prevent boxes from hitting the edge */
   }
 }
 
@@ -54,7 +52,6 @@ li:last-child {
 @media (max-width: 992px) {
   h1, p, ul {
     font-size: 1em; /* Default font size */
-    width: 90%; /* Set width to 90% for some space on the sides */
   }
 }
 
