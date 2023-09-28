@@ -18,6 +18,8 @@ h1, p, ul {
   padding: 20px;
   border-radius: 5px;
   list-style-type: none;
+  max-width: 1000px; /* Set a max-width for larger screens */
+  width: 90%; /* Default to 90% width */
 }
 
 a {
@@ -39,8 +41,23 @@ li:last-child {
   margin-bottom: 0;
 }
 
-@media (max-width: 768px) {
+/* For small mobile devices */
+@media (max-width: 576px) {
   h1, p, ul {
-    width: 90%;
+    font-size: 0.9em; /* Slightly reduce the font size */
+  }
+}
+
+/* For tablets and small desktops */
+@media (max-width: 992px) {
+  h1, p, ul {
+    font-size: 1em; /* Default font size */
+  }
+}
+
+/* For larger desktops */
+@media (min-width: 993px) {
+  h1, p, ul {
+    width: 80%; /* Reduce width to 80% for more space on the sides */
   }
 }
