@@ -1,0 +1,19 @@
+/* reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* no default margin or padding */
+    margin: 0;
+    padding: 0;
+}
+
+.full-width {
+    /* full width of its container */
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
