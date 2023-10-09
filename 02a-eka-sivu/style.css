@@ -15,46 +15,39 @@ html {
   background-color: var(--background-color);
 }
 
-img {
-  float: right;
-  margin: var(--image-margin);
-  max-width: 300px;
-  /* or whatever size you prefer */
-  max-height: 300px;
-  /* or whatever size you prefer */
-  width: auto;
-  height: auto;
-}
-
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.container, .container * {
+  text-align: left;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
 }
 
 h1 {
   color: var(--primary-color);
-  font-family: 'Arial', sans-serif;
-  text-align: center;
 }
 
 h2 {
   color: var(--secondary-color);
   font-family: 'Times New Roman', serif;
-  text-align: center;
 }
 
 p {
   color: var(--text-color);
-  font-family: 'Arial', sans-serif;
-  text-align: center;
 }
 
 .fancy-teksti {
   color: var(--fancy-text-color);
-  text-align: center;
 }
 
 .box {
@@ -65,6 +58,28 @@ p {
 }
 
 img {
-  float: right;
-  margin: var(--image-margin);
+  display: block;
+  margin: var(--image-margin) 0;
+  max-width: 300px;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+}
+
+figure {
+  margin: var(--box-margin);
+}
+
+figcaption {
+  font-style: italic;
+  margin-top: 0.5em;
+}
+
+li {
+  text-align: left;
+}
+
+ol, ul {
+  list-style-position: inside;
+  padding-left: 0;
 }
