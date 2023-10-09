@@ -24,7 +24,8 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
-.container, .container * {
+.container,
+.container * {
   text-align: left;
 }
 
@@ -79,7 +80,8 @@ li {
   text-align: left;
 }
 
-ol, ul {
+ol,
+ul {
   list-style-position: inside;
   padding-left: 0;
 }
