@@ -29,11 +29,15 @@ ul {
   list-style-type: none;
 }
 
+h2 {
+  text-align: center;
+}
 a {
   text-decoration: none;
   color: var(--link-color);
   transition: color 0.3s ease, font-weight 0.3s ease;
 }
+
 
 a:hover {
   color: var(--link-hover-color);
