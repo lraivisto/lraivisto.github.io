@@ -22,9 +22,11 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
+
 p {
     margin-left: 15px;
 }
+
 audio,
 canvas,
 iframe,
@@ -140,10 +142,8 @@ header h1 {
 
 .clearfix:after {
     clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
+    content: "";
+    display: table;
 }
 
 @media print {
